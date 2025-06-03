@@ -36,7 +36,7 @@ To run the notebook locally:
 
 1. Clone this repo  
    ```bash
-   git clone https://github.com/your-username/aquifer-water-analysis.git
+   git clone https://github.com/jilemp/aquifer-water-analysis.git
    cd aquifer-water-analysis
    ```
 
