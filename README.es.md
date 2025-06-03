@@ -7,7 +7,7 @@ Este repositorio contiene un notebook de análisis exploratorio de datos (EDA) e
 
 ```
 📦 Aquifer-Water-Analysis/
-├── explore (4).ipynb       # Notebook principal con el análisis completo
+├── explore.ipynb       # Notebook principal con el análisis completo
 ├── data/
 │   └── raw/                # Archivos de datos originales, incluyendo Aquifer_Auser.csv
 ├── README.md               # Descripción general del proyecto e instrucciones
@@ -44,7 +44,7 @@ Para ejecutar el notebook localmente:
 ### 🔹 Clonar el repositorio:
 
 ```bash
-git clone https://github.com/your-username/aquifer-water-analysis.git
+git clone https://github.com/jilemp/aquifer-water-analysis.git
 cd aquifer-water-analysis
 ```
 
