@@ -47,7 +47,7 @@ To run the notebook locally:
 
 3. Launch the notebook  
    ```bash
-   jupyter notebook "explore (4).ipynb"
+   jupyter notebook "explore.ipynb"
    ```
 
 ## 📈 Results
