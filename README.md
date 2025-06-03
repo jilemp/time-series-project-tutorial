@@ -32,18 +32,18 @@ To run the notebook locally:
 
 1. Clone this repo
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/aquifer-water-analysis.git
-cd aquifer-water-analysis
+ bash
+ Copy
+ Edit
+ git clone https://github.com/your-username/aquifer-water-analysis.git
+ cd aquifer-water-analysis
 
 2. Install dependencies
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
+ bash
+ Copy
+ Edit
+ pip install -r requirements.txt
 
 3. Launch the notebook
  
