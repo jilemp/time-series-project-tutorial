@@ -1,4 +1,4 @@
-🌊 **Análisis y Pronóstico del Nivel del Agua del Acuífero**  
+# 🌊 Análisis y Pronóstico del Nivel del Agua del Acuífero
 Este repositorio contiene un notebook de análisis exploratorio de datos (EDA) enfocado en las tendencias temporales de los niveles de agua del conjunto de datos *Aquifer Auser*. El proyecto incluye preprocesamiento, visualización y pronóstico utilizando herramientas estadísticas y de aprendizaje automático.
 
 ---
