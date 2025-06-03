@@ -1,7 +1,7 @@
-🌊 Aquifer Water Level Analysis & Forecasting
+**🌊 Aquifer Water Level Analysis & Forecasting**
 This repository contains an exploratory data analysis (EDA) notebook focusing on time series trends in water levels from the Aquifer Auser dataset. The project includes preprocessing, visualization, and forecasting using statistical and machine learning tools.
 
-📁 Project Structure
+**📁 Project Structure**
 bash
 Copy
 Edit
@@ -10,55 +10,49 @@ Edit
 ├── data/
 │   └── raw/                # Raw data files, including Aquifer_Auser.csv
 ├── README.md               # Project overview and instructions
-📊 Features
+
+**📊 Features**
 📉 Missing value imputation via linear interpolation
-
 🔄 Seasonal decomposition using STL
-
 📈 Forecasting with Prophet and Holt-Winters models
-
 📋 Summary statistics using TableOne
-
 📎 Visual diagnostics with Seaborn & Missingno
 
-🧰 Libraries Used
-pandas, numpy
+**🧰 Libraries Used**
+- pandas, numpy
+- matplotlib, seaborn
+- missingno, colorama
+- statsmodels
+- prophet
+- tableone
+- sklearn
 
-matplotlib, seaborn
-
-missingno, colorama
-
-statsmodels
-
-prophet
-
-tableone
-
-sklearn
-
-🚀 Getting Started
+**🚀 Getting Started**
 To run the notebook locally:
 
-Clone this repo
+1. Clone this repo
 
 bash
 Copy
 Edit
 git clone https://github.com/your-username/aquifer-water-analysis.git
 cd aquifer-water-analysis
-Install dependencies
+
+2. Install dependencies
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Launch the notebook
 
+3. Launch the notebook
+ 
 bash
 Copy
 Edit
 jupyter notebook "explore (4).ipynb"
-📈 Results
+
+**📈 Results**
 The notebook demonstrates that forecasting water levels using time series models can provide reasonably accurate predictions, with seasonal and trend components being key to understanding the data patterns.
 
 📬 Contact
