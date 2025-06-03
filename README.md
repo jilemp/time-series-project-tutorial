@@ -1,89 +1,65 @@
-# Data Science Project Boilerplate
+🌊 Aquifer Water Level Analysis & Forecasting
+This repository contains an exploratory data analysis (EDA) notebook focusing on time series trends in water levels from the Aquifer Auser dataset. The project includes preprocessing, visualization, and forecasting using statistical and machine learning tools.
 
-This boilerplate is designed to kickstart data science projects by providing a basic setup for database connections, data processing, and machine learning model development. It includes a structured folder organization for your datasets and a set of pre-defined Python packages necessary for most data science tasks.
+📁 Project Structure
+bash
+Copy
+Edit
+📦 Aquifer-Water-Analysis/
+├── explore (4).ipynb       # Main Jupyter Notebook with full analysis
+├── data/
+│   └── raw/                # Raw data files, including Aquifer_Auser.csv
+├── README.md               # Project overview and instructions
+📊 Features
+📉 Missing value imputation via linear interpolation
 
-## Structure
+🔄 Seasonal decomposition using STL
 
-The project is organized as follows:
+📈 Forecasting with Prophet and Holt-Winters models
 
-- `app.py` - The main Python script that you run for your project.
-- `explore.py` - A notebook to explore data, play around, visualize, clean, etc. Ideally the notebook code should be migrated to the app.py when moving to production.
-- `utils.py` - This file contains utility code for operations like database connections.
-- `requirements.txt` - This file contains the list of necessary python packages.
-- `models/` - This directory should contain your SQLAlchemy model classes.
-- `data/` - This directory contains the following subdirectories:
-  - `interin/` - For intermediate data that has been transformed.
-  - `processed/` - For the final data to be used for modeling.
-  - `raw/` - For raw data without any processing.
- 
-    
-## Setup
+📋 Summary statistics using TableOne
 
-**Prerequisites**
+📎 Visual diagnostics with Seaborn & Missingno
 
-Make sure you have Python 3.11+ installed on your. You will also need pip for installing the Python packages.
+🧰 Libraries Used
+pandas, numpy
 
-**Installation**
+matplotlib, seaborn
 
-Clone the project repository to your local machine.
+missingno, colorama
 
-Navigate to the project directory and install the required Python packages:
+statsmodels
 
-```bash
+prophet
+
+tableone
+
+sklearn
+
+🚀 Getting Started
+To run the notebook locally:
+
+Clone this repo
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/aquifer-water-analysis.git
+cd aquifer-water-analysis
+Install dependencies
+
+bash
+Copy
+Edit
 pip install -r requirements.txt
-```
+Launch the notebook
 
-**Create a database (if needed)**
+bash
+Copy
+Edit
+jupyter notebook "explore (4).ipynb"
+📈 Results
+The notebook demonstrates that forecasting water levels using time series models can provide reasonably accurate predictions, with seasonal and trend components being key to understanding the data patterns.
 
-Create a new database within the Postgres engine by customizing and executing the following command: `$ createdb -h localhost -U <username> <db_name>`
-Connect to the Postgres engine to use your database, manipulate tables and data: `$ psql -h localhost -U <username> <db_name>`
-NOTE: Remember to check the ./.env file information to get the username and db_name.
-
-Once you are inside PSQL you will be able to create tables, make queries, insert, update or delete data and much more!
-
-**Environment Variables**
-
-Create a .env file in the project root directory to store your environment variables, such as your database connection string:
-
-```makefile
-DATABASE_URL="your_database_connection_url_here"
-```
-
-## Running the Application
-
-To run the application, execute the app.py script from the root of the project directory:
-
-```bash
-python app.py
-```
-
-## Adding Models
-
-To add SQLAlchemy model classes, create new Python script files inside the models/ directory. These classes should be defined according to your database schema.
-
-Example model definition (`models/example_model.py`):
-
-```py
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String
-
-Base = declarative_base()
-
-class ExampleModel(Base):
-    __tablename__ = 'example_table'
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-
-```
-
-## Working with Data
-
-You can place your raw datasets in the data/raw directory, intermediate datasets in data/interim, and the processed datasets ready for analysis in data/processed.
-
-To process data, you can modify the app.py script to include your data processing steps, utilizing pandas for data manipulation and analysis.
-
-## Contributors
-
-This template was built as part of the 4Geeks Academy [Data Science and Machine Learning Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about [4Geeks Academy's BootCamp programs](https://4geeksacademy.com/us/programs) here.
-
-Other templates and resources like this can be found on the school GitHub page.
+📬 Contact
+For questions, feel free to reach out via GitHub Issues or fork the repo and contribute!
